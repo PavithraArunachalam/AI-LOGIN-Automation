@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Login Automation Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="page-title">
+      <div class="brand">ContextDesk</div>
+      <h1 id="page-title">Welcome back</h1>
+      <p class="subtitle">Sign in to continue to your workspace.</p>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            autocomplete="username"
+            placeholder="Enter your username"
+          />
+          <p id="username-error" class="field-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter your password"
+          />
+          <p id="password-error" class="field-error" role="alert"></p>
+        </div>
+
+        <button id="login-button" type="submit">Login</button>
+        <p id="form-message" class="form-message" role="status"></p>
+      </form>
+
+      <p class="demo-hint">Demo credentials: <strong>demo.user</strong> / <strong>Pass123!</strong></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
